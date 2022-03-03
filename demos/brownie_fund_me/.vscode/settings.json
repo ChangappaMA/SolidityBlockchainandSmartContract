@@ -1,0 +1,6 @@
+{
+  "yaml.schemas": {
+    "kubernetes": "*.yaml",
+    "https://json.schemastore.org/yamllint.json": "file:///c%3A/Chang/SelfLearn/Solidity/SolidityBlockchainandSmartContract/demos/brownie_fund_me/brownie-config.yaml"
+  }
+}
