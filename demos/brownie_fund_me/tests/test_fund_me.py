@@ -27,3 +27,14 @@ def test_only_owner_can_withdraw():
     bad_acct = accounts.add()
     with pytest.raises(exceptions.VirtualMachineError):
         fund_me.withdraw({"from": bad_acct})
+
+
+#brownie networks add development mainnet-fork cmd=ganache-cli host=http://127.0.0.1 fork='https://eth-mainnet.alchemyapi.io/v2/V6AAx1_YX6dOBXxpQiqLJMWm6c3BGEgX' accounts=10 mnemonic=brownie port=8545
+
+
+#Where should I run my tests?
+#1. Brownie ganache chain with Mocks: Always
+#2. Testnet: Always(but only for integration testing)
+#3. Brownie mainnet-fork: Optional
+#4. Custom mainnet-fork: Optional
+#5. Self/local Ganache: Not necessary, but good for tinkering

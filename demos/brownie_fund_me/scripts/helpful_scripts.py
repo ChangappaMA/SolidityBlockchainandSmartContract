@@ -1,7 +1,7 @@
 from brownie import accounts, config, network, MockV3Aggregator
 from dotenv import load_dotenv
 
-FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainet-fork"]
+FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork-dev", "mainet-fork"]
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["development", "ganache-local"]
 DECIMAL = 8
 STARTING_PRICE = 20000000000
