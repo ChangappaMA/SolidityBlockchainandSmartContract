@@ -1,7 +1,9 @@
 from scripts.helpful_scripts import get_account, get_contract, fund_with_link
 from brownie import Lottery, config, network
 import time
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def deploy_lottery():
     account = get_account()
@@ -17,6 +19,7 @@ def deploy_lottery():
     )
 
     print("Deployed Lottery")
+    return lottery
 
 #starting lottery
 def start_lottery():

@@ -4,7 +4,7 @@ from brownie import accounts, network, config, MockV3Aggregator, Contract, VRFCo
 FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev"]
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["development", "ganache-local"]
 DECIMAL = 8
-STARTING_PRICE = 20000000000
+STARTING_PRICE = 200000000000
 
 def get_account(index=None, id=None):
 
