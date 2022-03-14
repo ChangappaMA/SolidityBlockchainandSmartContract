@@ -21,7 +21,7 @@ contract Lottery is VRFConsumerBase, Ownable {
     LOTTERY_STATE public lottery_state;
     uint256 public fee;
     bytes32 public keyhash;
-    event RequestedRandomness(bytes32 requestID);
+    event RequestedRandomness(bytes32 requestId);
 
     constructor(
         address _priceFeedAddress, 
